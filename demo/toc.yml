@@ -1,7 +1,0 @@
-- name: Articles
-  href: articles/
-- name: Api Documentation
-  href: api/
-  topicHref: api/index.md
-- name: GitHub
-  href: https://github.com/jbltx/DiscordFX/
