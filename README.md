@@ -11,26 +11,28 @@
 - The table of contents supports 4 levels of items to properly facilitate usage together with `memberpage`.
 - Contains optional style overrides that are optimized for articles, mostly changing how heading tags (`h1` to `h5`) are displayed. Just wrap your HTML or markdown article with `<div class="article"></div>` for a much nicer article layout that works nicely with up to 5 heading levels.
 
+### [Live Demo (Singulink.IO.FileSystem)](https://www.singulink.com/Docs/Singulink.IO.FileSystem/)
+
+![Method Page Screenshot](./screenshots/method.png)
+
 ### About Singulink
 
 We are a small team of engineers and designers dedicated to building beautiful, functional and well-engineered software solutions. We offer very competitive rates as well as fixed-price contracts and welcome inquiries to discuss any custom development / project support needs you may have.
 
 Visit https://github.com/Singulink to see our full list of publicly available libraries and other open-source projects.
 
-### [Live Demo (Singulink.IO.FileSystem)](https://www.singulink.com/Docs/Singulink.IO.FileSystem/)
-
-![Method Page Screenshot](./screenshots/method.png)
-
 ## Installation 
 
-1. Download the source or the zipped file from the [releases page](https://github.com/jbltx/DiscordFX/releases).
+1. Download the source or the zipped file from the [releases page](https://github.com/Singulink/SingulinkFX/releases).
 2. In your DocFX project folder, create a new directory named `templates`, if it doesn't already exist.
 3. Copy the `singulinkfx` folder from this repository into your `templates` folder.
-4. [Download the memberpage plugin](https://dotnet.github.io/docfx/templates-and-plugins/plugins-dashboard.html) and follow instructions, place it into a `plugins` folder
+4. (Optional) [Download the memberpage plugin](https://dotnet.github.io/docfx/templates-and-plugins/plugins-dashboard.html) and follow instructions, place it into a `plugins` folder
 5. In your `docfx.json` configuration file, add `singulinkfx` and `memberpage` path into the `build.template` property:
    ```json
-   "template": ["default", "templates/discordfx-plus", "plugins/memberpage.2.59.0/content"]
+   "template": ["default", "templates/singulinkfx", "plugins/memberpage.2.59.0/content"]
    ```
+
+A real-world example of a .NET library using this template with articles and `memberpage` can be found in the [Singulink.IO.FileSystem](https://github.com/Singulink/Singulink.IO.FileSystem) repository (check out the `Docs` folder). If you are new to DocFX you might also find it helpful for properly setting up the table of contents.
 
 ## Customization
 
