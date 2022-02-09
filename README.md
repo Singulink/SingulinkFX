@@ -10,6 +10,11 @@
 - Empty table columns are removed, so if you don't comment the parameters or return value on some methods then it won't display an empty description column.
 - The table of contents supports 4 levels of items to properly facilitate usage together with `memberpage`.
 - Contains optional style overrides that are optimized for articles, mostly changing how heading tags (`h1` to `h5`) are displayed. Just wrap your HTML or markdown article with `<div class="article"></div>` for a much nicer article layout that works nicely with up to 5 heading levels.
+- Includes [Bootstrap Icons](https://icons.getbootstrap.com/).
+
+### [Live Demo (Singulink.IO.FileSystem)](https://www.singulink.com/Docs/Singulink.IO.FileSystem/)
+
+![Method Page Screenshot](./screenshots/method.png)
 
 ### [Live Demo (Singulink.IO.FileSystem)](https://www.singulink.com/Docs/Singulink.IO.FileSystem/)
 
