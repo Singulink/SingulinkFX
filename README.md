@@ -2,7 +2,7 @@
 
 [![Join the chat](https://badges.gitter.im/Singulink/community.svg)](https://gitter.im/Singulink/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-**SingulinkFX** is a [DocFX](https://dotnet.github.io/docfx/) template used by Singulink projects. It is fully responsive and works beautifully together with the `memberpage` plugin to produce documentation that is familiar to those used to browsing Microsoft .NET documentation.
+**SingulinkFX** is a fully responsive [DocFX](https://dotnet.github.io/docfx/) template used for Singulink project documentation. It works beautifully together with the `memberpage` plugin to produce documentation that is familiar to those used to browsing Microsoft .NET documentation.
 
 **Features:**
 - Responsive layout that works well with all devices.
@@ -64,12 +64,20 @@ The `styles/main.js` file can be used to add your own custom Javascript. The rec
 
 ## More Screenshots
 
+### Desktop
+
 ![Article Screenshot](./screenshots/article.png)
 
 ![Namespace Page Screenshot](./screenshots/namespace.png)
 
 ![Class Page Screenshot](./screenshots/class.png)
 
+### Mobile
+
 ![Class Mobile Page Screenshot](./screenshots/class-mobile.png)
 
 ![Nav Menu Mobile Screenshot](./screenshots/nav-mobile.png)
+
+## Attribution
+
+Special thanks to [@jbltx](https://github.com/jbltx) for creating [DiscordFX](https://github.com/jbltx/DiscordFX) which was a great starting point for this template.
