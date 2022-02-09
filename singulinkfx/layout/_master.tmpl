@@ -35,7 +35,9 @@
             </nav>
 
             <main class="main-panel">
-                {{#_enableSearch}}{{>partials/searchResults}}{{/_enableSearch}}
+                {{#_enableSearch}}
+                {{>partials/searchResults}}
+                {{/_enableSearch}}
 
                 <div role="main" class="hide-when-search" >
                     {{^_disableBreadcrumb}}
@@ -46,6 +48,12 @@
                       {{!body}}
                     </article>
                 </div>
+
+                {{#_copyrightFooter}}
+                <div class="copyright-footer">
+                    <span>{{_copyrightFooter}}</span>
+                </div>
+                {{/_copyrightFooter}}
             </main>
         </div>
 
