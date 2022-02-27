@@ -5,16 +5,12 @@
 **SingulinkFX** is a fully responsive [DocFX](https://dotnet.github.io/docfx/) template used for Singulink project documentation. It works beautifully together with the `memberpage` plugin to produce documentation that is familiar to those used to browsing Microsoft .NET documentation.
 
 **Features:**
-- Responsive layout that works well with all devices.
-- Easily configurable side bar width.
+- Responsive layout for all device sizes.
+- Easily configurable colors and side bar width.
 - Empty table columns are removed, so if you don't comment the parameters or return value on some methods then it won't display an empty description column.
 - The table of contents supports 4 levels of items to properly facilitate usage together with `memberpage`.
-- Contains optional style overrides that are optimized for articles, mostly changing how heading tags (`h1` to `h5`) are displayed. Just wrap your HTML or markdown article with `<div class="article"></div>` for a much nicer article layout that works nicely with up to 5 heading levels.
+- Contains optional style overrides optimized for displaying articles.
 - Includes [Bootstrap Icons](https://icons.getbootstrap.com/).
-
-### [Live Demo (Singulink.IO.FileSystem)](https://www.singulink.com/Docs/Singulink.IO.FileSystem/)
-
-![Method Page Screenshot](./screenshots/method.png)
 
 ### [Live Demo (Singulink.IO.FileSystem)](https://www.singulink.com/Docs/Singulink.IO.FileSystem/)
 
@@ -68,6 +64,10 @@ You can change any color as well as the width of the side bar and font sizes for
 ### Custom Javascript
 
 The `styles/main.js` file can be used to add your own custom Javascript. The recommended approach is to create another directory inside `templates` for your sub-theme, add a `styles/main.js` file, and add your theme to the end of the list of templates in `docfx.json`. Your `main.js` file will be automatically referenced in the output, there is no need to override any other template files.
+
+### Article Styling
+
+Wrap your HTML or markdown in a `<div class="article"></div>` to activate styles that change heading styles and spacing to something more suitable for articles instead of API member docs. Supports up to 5 heading levels (`h1` to `h5` for HTML or `#` to `#####` for markdown).
 
 ## More Screenshots
 
