@@ -35,4 +35,17 @@ $(function() {
             }
         });
     });
+
+    function scrollToc() {
+        var activeTocItem = $('.sidebar .sidebar-item.active:last')[0]
+    
+        if (activeTocItem) {
+            activeTocItem.scrollIntoView({ block: "center" });
+        }
+        else{
+            setTimeout(scrollToc, 500);
+        }
+    }
+
+    setTimeout(scrollToc, 500);
 });
