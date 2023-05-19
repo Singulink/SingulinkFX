@@ -474,3 +474,99 @@ table td {
     float: right;
     margin-top: 1.1em;
 }
+
+
+/* Tabs */
+
+.tabGroup {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.tabGroup ul[role="tablist"] {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border-bottom: var(--nav-tabs-border-width) solid var(--nav-tabs-border-color);
+}
+
+.tabGroup ul[role="tablist"] > li {
+    list-style: none;
+    display: inline-block;
+    margin-bottom: 0;
+}
+
+.tabGroup ul[role="tablist"] .dropdown-menu {
+    /* Make dropdown border overlap tab border */
+    margin-top: calc(-1 * var(--nav-tabs-border-width));
+    /* Remove the top rounded corners here since there is a hard edge above the menu */
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.tabGroup a[role="tab"] {
+    display: block;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+
+    margin-bottom: calc(-1 * var(--nav-tabs-border-width));
+    border: var(--nav-tabs-border-width) solid transparent;
+    border-top-left-radius: var(--nav-tabs-border-radius);
+    border-top-right-radius: var(--nav-tabs-border-radius);
+}
+
+.tabGroup a[role="tab"]:hover, .tabGroup a[role="tab"]:focus {
+    /* Prevents active .nav-link tab overlapping focus outline of previous/next .nav-link */
+    isolation: isolate;
+    border-color: var(--nav-tabs-link-hover-border-color);
+}
+
+.tabGroup a[role="tab"][aria-selected="true"] {
+    color: var(--nav-tabs-link-active-color);
+    background-color: var(--nav-tabs-link-active-bg);
+    border-color: var(--nav-tabs-link-active-border-color);
+}
+
+.tabGroup a[role="tab"]:disabled {
+    color: var(--nav-link-disabled-color);
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.tabGroup section[role="tabpanel"] {
+    padding: 15px;
+    margin: 0;
+    overflow: hidden;
+
+    border: var(--nav-tabs-border-width) solid var(--nav-tabs-border-color);
+    border-top: none;
+    border-bottom-left-radius: var(--nav-tabs-border-radius);
+    border-bottom-right-radius: var(--nav-tabs-border-radius);
+}
+
+.tabGroup section[role="tabpanel"] > .codeHeader,
+.tabGroup section[role="tabpanel"] > pre {
+    margin-left: -16px;
+    margin-right: -16px;
+}
+
+.tabGroup section[role="tabpanel"] > :first-child {
+    margin-top: 0;
+}
+
+.tabGroup section[role="tabpanel"] > pre:last-child {
+    display: block;
+    margin-bottom: -16px;
+}
+
+.tabGroup > section {
+  margin: 0;
+  padding: 1rem;
+  border-top: 0;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.mainContainer[dir='rtl'] main ul[role="tablist"] {
+    margin: 0;
+}
