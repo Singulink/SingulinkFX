@@ -473,6 +473,8 @@ table td {
 #contribution {
     float: right;
     margin-top: 1.1em;
+    position: relative;
+    z-index: 999;
 }
 
 
