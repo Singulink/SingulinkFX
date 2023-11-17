@@ -32,7 +32,7 @@ Visit https://github.com/Singulink to see our full list of publicly available li
    "template": ["default", "templates/singulinkfx"]
    ```
 
-A real-world example of a .NET library using this template with articles can be found in the  [Singulink.Collections](https://www.singulink.com/Docs/Singulink.Collections/) repository (check out the `Docs` folder). If you are new to DocFX you might also find it helpful for properly setting up the table of contents.
+A real-world example of a .NET library using this template with articles can be found in the  [Singulink.Collections](https://github.com/Singulink/Singulink.Collections) repository (check out the `Docs` folder). If you are new to DocFX you might also find it helpful for properly setting up the table of contents.
 
 ## Versions and Upgrading
 
