@@ -32,7 +32,7 @@ Visit https://github.com/Singulink to see our full list of publicly available li
    "template": ["default", "templates/singulinkfx"]
    ```
 
-A real-world example of a .NET library using this template with articles can be found in the [Singulink.IO.FileSystem](https://github.com/Singulink/Singulink.IO.FileSystem) repository (check out the `Docs` folder). If you are new to DocFX you might also find it helpful for properly setting up the table of contents.
+A real-world example of a .NET library using this template with articles can be found in the  [Singulink.Collections](https://www.singulink.com/Docs/Singulink.Collections/) repository (check out the `Docs` folder). If you are new to DocFX you might also find it helpful for properly setting up the table of contents.
 
 ## Versions and Upgrading
 
@@ -40,7 +40,7 @@ A real-world example of a .NET library using this template with articles can be 
 
 For use with DocFX v2.62 and above.
 
-The `memberpage-extras` plugin has been removed for version 2+ of the template. DocFX v2.62 no longer shows explicit interface members by default. Furthermore, the functionality to group explicit interface implementations into their own section in the table of contents has been merged into the DocFX codebase and an option for including explicit interface implementations is in the works so the plugin should no longer be necessary moving forward.
+The `memberpage-extras` plugin has been removed for version 2+ of the template. DocFX v2.62 no longer shows explicit interface members by default. Furthermore, the functionality to group explicit interface implementations into their own section in the table of contents has been merged into the DocFX codebase and an option for including explicit interface implementations is in the works so the plugin should no longer be necessary moving forward. To get similar functionality working again, set https://dotnet.github.io/docfx/reference/docfx-json-reference.html#memberlayout to "separatePages"
 
 ### Version 1.x
 
