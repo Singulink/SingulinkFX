@@ -36,6 +36,10 @@ A real-world example of a .NET library using this template with articles can be 
 
 ## Versions and Upgrading
 
+### Version 3.x
+
+For use with DocFX v2.75 and above.
+
 ### Version 2.x
 
 For use with DocFX v2.62 and above.
