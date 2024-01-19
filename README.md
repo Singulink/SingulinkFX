@@ -2,7 +2,7 @@
 
 [![Chat on Discord](https://img.shields.io/discord/906246067773923490)](https://discord.gg/EkQhJFsBu6)
 
-**SingulinkFX** is a fully responsive [DocFX](https://dotnet.github.io/docfx/) template used for Singulink project documentation. It works beautifully together with the `memberpage` plugin to produce documentation that is familiar to those used to browsing Microsoft's .NET documentation.
+**SingulinkFX** is a fully responsive [DocFX](https://dotnet.github.io/docfx/) template used for Singulink projects to produce documentation that is familiar to those used to browsing Microsoft's .NET documentation.
 
 **Features:**
 - Responsive layout for all device sizes.
