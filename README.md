@@ -6,9 +6,9 @@
 
 **Features:**
 - Responsive layout for all device sizes.
-- Easily configurable colors and side bar width.
+- Easily configurable colors and sidebar width.
 - Empty table columns are removed, so if you don't comment the parameters or return value on some methods then it won't display an empty description column.
-- The table of contents supports 4 levels of items to properly facilitate usage together with `memberpage`.
+- The table of contents supports 4 levels of items to properly facilitate usage together with the [`separatePages` member layout](https://dotnet.github.io/docfx/reference/docfx-json-reference.html#memberlayout).
 - Contains optional style overrides optimized for displaying articles.
 - Includes [Bootstrap Icons](https://icons.getbootstrap.com/).
 
