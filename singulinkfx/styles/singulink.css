@@ -384,6 +384,7 @@ ul.level4 > li > a, ul.level4 > li > a.sidebar-item {
 @media (min-width: 1024px) {
     .main-panel {
         margin-bottom: 0;
+        margin-left: var(--sidebar-width);
         padding: 20px 40px;
     }
 }

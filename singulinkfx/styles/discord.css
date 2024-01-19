@@ -35,15 +35,8 @@ html, body
     padding: 0;
     margin: 0;
     font: 15px/150% 'Roboto', sans-serif;
-    overflow: hidden;
     color: var(--text-color);
     background-color: var(--main-bg-color);
-
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
 }
 
 img {
@@ -248,7 +241,6 @@ span.sidebar-item
 {
     background-color: var(--main-bg-color);
     flex: 1;
-    overflow-y: auto;
     padding: 20px 40px;
 }
 
@@ -352,7 +344,7 @@ span.sidebar-item
 {
     nav
     {
-        position: relative;
+        position: fixed;
         left: 0!important;
         top: 0;
         bottom: 0;
