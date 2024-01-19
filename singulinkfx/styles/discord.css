@@ -602,7 +602,7 @@ ul.level1 > li > .expand-stub
     transform: none;
 }
 
-li > ul 
+.sidetoc li > ul 
 {
     display: none;
 }
