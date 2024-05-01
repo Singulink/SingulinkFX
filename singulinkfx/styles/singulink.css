@@ -509,33 +509,12 @@ ul.level2>li>a.sidebar-item.active,ul.level3>li>a.sidebar-item.active {
     color: var(--link-active-color)
 }
 
-.inheritance .level0:before,.inheritance .level1:before,.inheritance .level2:before,.inheritance .level3:before,.inheritance .level4:before,.inheritance .level5:before {
-    content: "↳";
-    margin-right: 5px
+.inheritance div {
+    display: inline-block;
 }
 
-.inheritance .level0 {
-    margin-left: 0
-}
-
-.inheritance .level1 {
-    margin-left: 1em
-}
-
-.inheritance .level2 {
-    margin-left: 2em
-}
-
-.inheritance .level3 {
-    margin-left: 3em
-}
-
-.inheritance .level4 {
-    margin-left: 4em
-}
-
-.inheritance .level5 {
-    margin-left: 5em
+.inheritance div:not(:last-child):after {
+    content: " → ";
 }
 
 body {
