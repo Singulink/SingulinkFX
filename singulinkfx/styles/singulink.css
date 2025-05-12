@@ -934,7 +934,7 @@ table td p {
     margin-block-start: 30px
 }
 
-#contribution {
+.contribution {
     float: right;
     margin-top: 1.1em;
     position: relative;
