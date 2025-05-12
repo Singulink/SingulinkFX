@@ -38,13 +38,13 @@ A real-world example of a .NET library using this template with articles can be 
 
 ### Version 3.x
 
-For use with DocFX v2.75 and above.
+For use with DocFX v2.75 and above. There are some issues with DocFX v2.78.x at the moment, so it is recommended to stay on 2.77.x if possible until further notice.
 
 ### Version 2.x
 
 For use with DocFX v2.62 and above.
 
-The `memberpage-extras` plugin has been removed for version 2+ of the template. DocFX v2.62 no longer shows explicit interface members by default. Furthermore, the functionality to group explicit interface implementations into their own section in the table of contents has been merged into the DocFX codebase and an option for including explicit interface implementations is in the works so the plugin should no longer be necessary moving forward.
+The `memberpage-extras` plugin has been removed for version 2+ of the template. DocFX v2.62 no longer shows explicit interface members by default. Furthermore, the functionality to group explicit interface implementations into their own section in the table of contents has been merged into the DocFX codebase and DocFX now has an option for including explicit interface implementations is in the works so the pluginis no longer necessary moving forward.
 
 ### Version 1.x
 
