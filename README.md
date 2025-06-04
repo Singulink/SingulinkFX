@@ -38,7 +38,10 @@ A real-world example of a .NET library using this template with articles can be 
 
 ### Version 3.x
 
-For use with DocFX v2.75 - 2.77. There are some issues with DocFX v2.78+ at the moment, so it is recommended to stay on v2.77 if possible until further notice.
+For use with DocFX v2.75 - v2.77.
+
+> [!WARNING]
+> There are some issues with DocFX v2.78+ at the moment that result in a poor table of contents experience, so it is recommended to stay on v2.77 until further notice. This will be updated with additional guidance after DocFX addresses the outstanding issues. 
 
 ### Version 2.x
 
