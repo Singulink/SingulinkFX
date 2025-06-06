@@ -121,7 +121,15 @@ ul {
 }
 
 ol,ul {
-    padding-inline-start: 3em
+    padding-inline-start: 2.5em
+}
+
+ul span.term {
+    font-weight: bold;
+}
+
+ul span.term:after {
+    content: ' - ';
 }
 
 ul.level1 {
