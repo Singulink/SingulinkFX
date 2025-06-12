@@ -38,10 +38,10 @@ A real-world example of a .NET library using this template with articles can be 
 
 ### Version 3.x
 
-For use with DocFX v2.75 - v2.77.
+For use with DocFX v2.75+.
 
 > [!WARNING]
-> There are some issues with DocFX v2.78+ at the moment that result in a poor table of contents experience, so it is recommended to stay on v2.77 until further notice. This will be updated with additional guidance after DocFX addresses the outstanding issues. 
+> There is [an issue with DocFX v2.78+](https://github.com/dotnet/docfx/issues/10424) at the moment that breaks the intended table of contents experience of this theme, so it is recommended to either stay on v2.77 or [download our custom build of DocFX v2.78.3](https://www.singulink.com/ClientFiles/docfx-v2.78.3-fixed-singulink.zip) (requires .NET 9) that includes [the fix to the issue](https://github.com/dotnet/docfx/pull/10700). If you use some newer C#/.NET features like `allows ref struct` then v2.77 will fail to build metadata so the custom build is required until the fix is merged into DocFX main and a new release is published.
 
 ### Version 2.x
 
