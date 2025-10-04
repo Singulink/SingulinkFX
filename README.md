@@ -22,15 +22,50 @@ We are a small team of engineers and designers dedicated to building beautiful, 
 
 Visit https://github.com/Singulink to see our full list of publicly available libraries and other open-source projects.
 
-## Installation 
+## Installation
+**NOTE: The current DocFX v2.78+ release has a bug that will partially break some functionality.  Their next release should have this fixed but see [Versions and Upgrading](#versions-and-upgrading) for work arounds.**
+
+You can adjust the paths and layout as needed but for the below guide here is an example layout:
+```
+c:/MyLib/
+c:/MyLib/MyLib/MyLib.csproj
+c:/MyLib/docs (DocFX project folder)
+c:/MyLib/docs/docfx.json
+```
 
 1. Download the source or the zipped file from the [releases page](https://github.com/Singulink/SingulinkFX/releases).
-2. In your DocFX project folder, create a directory named `templates`, if it doesn't already exist.
+2. In your DocFX project folder, create a directory named `templates` (ie: `c:/MyLib/docs/templates`), if it doesn't already exist.
 3. Copy the `singulinkfx` folder from this repository into the `templates` folder.
-4. In your `docfx.json` configuration file, add the `singulinkfx` path into the `build.template` property:
-   ```json
+4. In your `docfx.json` configuration file, add the `singulinkfx` path into the `build.template` array ie:
+```json
+   {
+     "globalMetadata": {
+        "_appName": "Singulink.IO.FileSystem",
+        ...
+     },
+     ...
    "template": ["default", "templates/singulinkfx"]
-   ```
+   }
+```
+
+5. If you want the left hand nav bar to have the breakout of methods/properties/fields under the class you must also enable the separate page member layout under the metadata category you want ie:
+
+```json
+{
+  ...
+  "metadata": [
+    {
+      "dest": "api",
+      "includeExplicitInterfaceImplementations": true,
+      "properties": {"TargetFramework": "net9.0"},
+      "src": [
+        {
+        "src": "../MyLib",
+        "files": [ "MyLib.csproj" ]
+  ...
+}
+```
+
 
 A real-world example of a .NET library using this template with articles can be found in the [Singulink.IO.FileSystem](https://github.com/Singulink/Singulink.IO.FileSystem) repository (check out the `Docs` folder). If you are new to DocFX you might also find it helpful for properly setting up the table of contents.
 
