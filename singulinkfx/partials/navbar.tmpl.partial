@@ -5,14 +5,23 @@
     {{>partials/logo}}
   </div>
 
-  {{#_enableSearch}}
-  <div class="sidesearch">
-    <form id="search" role="search" class="search">
-        <i class="bi bi-search search-icon"></i>
-        <input type="text" id="search-query" placeholder="{{__global.search}}" autocomplete="off">
-    </form>
+  <div class="search-and-theme-container">
+    <div class="theme-toggle-container">
+      <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle theme" title="Toggle theme">
+        <i class="bi bi-sun-fill theme-icon-light"></i>
+        <i class="bi bi-moon-fill theme-icon-dark"></i>
+      </button>
+    </div>
+
+    {{#_enableSearch}}
+    <div class="sidesearch">
+      <form id="search" role="search" class="search">
+          <i class="bi bi-search search-icon"></i>
+          <input type="text" id="search-query" placeholder="{{__global.search}}" autocomplete="off">
+      </form>
+    </div>
+    {{/_enableSearch}}
   </div>
-  {{/_enableSearch}}
 
   <div id="navbar">
   </div>
