@@ -10,6 +10,9 @@
       <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle theme" title="Toggle theme">
         <i class="bi bi-sun-fill theme-icon-light"></i>
         <i class="bi bi-moon-fill theme-icon-dark"></i>
+        {{^_enableSearch}}
+        <span class="theme-toggle-label">Dark Mode</span>
+        {{/_enableSearch}}
       </button>
     </div>
 

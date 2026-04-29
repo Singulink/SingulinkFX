@@ -26,6 +26,11 @@ function updateThemeIcon(theme) {
         } else {
             button.classList.add('light-mode');
         }
+
+        const label = button.querySelector('.theme-toggle-label');
+        if (label) {
+            label.textContent = theme === 'dark' ? 'Dark Mode' : 'Light Mode';
+        }
     }
 }
 

@@ -7,12 +7,15 @@
 **Features:**
 - Responsive layout for all device sizes.
 - Easily configurable colors and sidebar width.
+- Light and dark theme with toggle (thanks [@mitchcapper](https://github.com/mitchcapper)!)
 - Empty table columns are removed, so if you don't comment the parameters or return value on some methods then it won't display an empty description column.
 - The table of contents supports 4 levels of items to properly facilitate usage together with the [`separatePages` member layout](https://dotnet.github.io/docfx/reference/docfx-json-reference.html#memberlayout).
 - Contains optional style overrides optimized for displaying articles.
 - Includes [Bootstrap Icons](https://icons.getbootstrap.com/).
 
-### [Live Demo (Singulink.IO.FileSystem)](https://www.singulink.com/Docs/Singulink.IO.FileSystem/)
+### Live Demos
+- [(Singulink.UI)](https://www.singulink.com/Docs/Singulink.UI/)
+- [(Singulink.IO.FileSystem)](https://www.singulink.com/Docs/Singulink.IO.FileSystem/)
 
 ![Method Page Screenshot](./screenshots/method.png)
 
@@ -44,7 +47,7 @@ Visit https://github.com/Singulink to see our full list of publicly available li
    }
    ```
 
-A real-world example of a .NET library using this template with a full configuration and articles can be found in the [Singulink.IO.FileSystem](https://github.com/Singulink/Singulink.IO.FileSystem) repository (check out the `Docs` folder). If you are new to DocFX you might also find it helpful for properly setting up the table of contents.
+A real-world example of a .NET library using this template with a full configuration and articles can be found in the [Singulink.IO.FileSystem](https://github.com/Singulink/Singulink.IO.FileSystem) repository (check out the `Docs` folder). If you are new to DocFX you might also find it helpful for properly setting up the folder structure and table of contents.
 
 ## Versions and Upgrading
 
