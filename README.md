@@ -22,26 +22,35 @@ We are a small team of engineers and designers dedicated to building beautiful, 
 
 Visit https://github.com/Singulink to see our full list of publicly available libraries and other open-source projects.
 
-## Installation 
+## Getting Started
 
-1. Download the source or the zipped file from the [releases page](https://github.com/Singulink/SingulinkFX/releases).
-2. In your DocFX project folder, create a directory named `templates`, if it doesn't already exist.
-3. Copy the `singulinkfx` folder from this repository into the `templates` folder.
-4. In your `docfx.json` configuration file, add the `singulinkfx` path into the `build.template` property:
+1. Download the template source or the zipped file from the [releases page](https://github.com/Singulink/SingulinkFX/releases).
+2. Create a DocFX project folder (e.g. `Docs`) in the root of your repository, and initialize DocFX by running `docfx init` in the folder.
+3. Copy the `singulinkfx` folder from this repository into `Docs/templates` (create the folder if needed).
+4. In your `docfx.json` configuration file, modify the `build.template` property to reference the `singulinkfx` template (must be placed after the `default` template):
    ```json
    "template": ["default", "templates/singulinkfx"]
    ```
+5. If you want the left-hand navigation to break out individual pages for each member, make sure you specify that in the `metadata.memberLayout` property:
+   ```json
+   {
+     ...
+     "metadata": [
+     {
+         "dest": "api",
+         "includeExplicitInterfaceImplementations": true,
+         "memberLayout": "separatePages",
+     ...
+   }
+   ```
 
-A real-world example of a .NET library using this template with articles can be found in the [Singulink.IO.FileSystem](https://github.com/Singulink/Singulink.IO.FileSystem) repository (check out the `Docs` folder). If you are new to DocFX you might also find it helpful for properly setting up the table of contents.
+A real-world example of a .NET library using this template with a full configuration and articles can be found in the [Singulink.IO.FileSystem](https://github.com/Singulink/Singulink.IO.FileSystem) repository (check out the `Docs` folder). If you are new to DocFX you might also find it helpful for properly setting up the table of contents.
 
 ## Versions and Upgrading
 
 ### Version 3.x
 
 For use with DocFX v2.75+.
-
-> [!WARNING]
-> There is [an issue with DocFX v2.78+](https://github.com/dotnet/docfx/issues/10424) at the moment that breaks the intended table of contents experience of this theme, so it is recommended to either stay on v2.77 or [download our custom build of DocFX v2.78.3](https://www.singulink.com/ClientFiles/docfx-v2.78.3-fixed-singulink.zip) (requires .NET 9) that includes [the fix to the issue](https://github.com/dotnet/docfx/pull/10700). If you use some newer C#/.NET features like `allows ref struct` then v2.77 will fail to build metadata so the custom build is required until the fix is merged into DocFX main and a new release is published.
 
 ### Version 2.x
 
