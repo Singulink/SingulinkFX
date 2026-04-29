@@ -7,16 +7,17 @@
 **Features:**
 - Responsive layout for all device sizes.
 - Easily configurable colors and sidebar width.
-- Light and dark theme with toggle (thanks [@mitchcapper](https://github.com/mitchcapper)!)
+- Light and dark theme with toggle (new in v3.1 - thanks [@mitchcapper](https://github.com/mitchcapper)!)
 - Empty table columns are removed, so if you don't comment the parameters or return value on some methods then it won't display an empty description column.
 - The table of contents supports 4 levels of items to properly facilitate usage together with the [`separatePages` member layout](https://dotnet.github.io/docfx/reference/docfx-json-reference.html#memberlayout).
 - Contains optional style overrides optimized for displaying articles.
 - Includes [Bootstrap Icons](https://icons.getbootstrap.com/).
 
 ### Live Demos
-- [(Singulink.UI)](https://www.singulink.com/Docs/Singulink.UI/)
-- [(Singulink.IO.FileSystem)](https://www.singulink.com/Docs/Singulink.IO.FileSystem/)
+- [Singulink.UI Docs](https://www.singulink.com/Docs/Singulink.UI/)
+- [Singulink.IO.FileSystem Docs](https://www.singulink.com/Docs/Singulink.IO.FileSystem/)
 
+![Light Mode Screenshot](./screenshots/light-mode.png)
 ![Method Page Screenshot](./screenshots/method.png)
 
 ### About Singulink
