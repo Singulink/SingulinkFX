@@ -6,6 +6,13 @@
 
     --base-font-size: 16px;
     --smalldevice-base-font-size: 14px; /* Base font size for devices < 1024px */
+    --sidebar-width: 400px;
+}
+
+/* Dark Theme (Default) */
+:root,
+[data-theme='dark'] {
+    /* General */
     
     --main-bg-color: #1f1f23;
     --footer-bg-color: rgba(0,0,0,.4);
@@ -40,7 +47,6 @@
 
     /* Sidebar */
 
-    --sidebar-width: 400px;
     --sidebar-bg-color: #292B30;
 
     --search-color: #bdbdbd;
@@ -102,19 +108,106 @@
     /* Code Blocks */
 
     --code-bg-color: #151515;
-    --code-color: #d6deeb;
-    --code-keyword-color: #569cd6;
-    --code-comment-color: #57a64a;
-    --code-macro-color: #beb7ff;
-    --code-string-color: #d69d85;
-    --code-string-escape-color: #ffd68f;
-    --code-field-color: #c8c8c8;
-    --code-function-color: #dcdcaa;
-    --code-control-color: #d8a0df;
-    --code-class-color: #4ec9b0;
-    --code-number-color: #b5cea8;
-    --code-params-color: #9a9a9a;
-    --code-breakpoint-color: #8c2f2f;
+}
+
+/* Light Theme */
+[data-theme='light'] {
+    /* General */
+    
+    --main-bg-color: #ffffff;
+    --footer-bg-color: rgba(0,0,0,.05);
+    --separator-color: #e0e0e0;
+
+    --table-strip-bg-color: #f5f5f5;
+    --table-header-bg-color: #e8e8e8;
+    --table-header-color: rgba(0,0,0,.8);
+    --table-header-border-color: #d0d0d0;
+
+    /* Text */
+
+    --appname-color: #1a1a1a;
+
+    --h1-color: #1a1a1a;
+    --h2-color: #2a2a2a;
+    --h3-color: #3a3a3a;
+    --h4-color: #1a1a1a;
+    --h5-color: #2a2a2a;
+
+    --text-color: #333333;
+    --link-color: #0078d4;
+    --link-hover-color: #106ebe;
+    
+    /* Mobile Topbar */
+
+    --topbar-bg-color: #f5f5f5;
+    
+    /* Button */
+
+    --button-color: #616161;
+
+    /* Sidebar */
+
+    --sidebar-bg-color: #f8f8f8;
+
+    --search-color: #333333;
+    --search-bg-color: #ffffff;
+    --search-searchicon-color: #616161;
+    --search-border-color: #d0d0d0;
+
+    --sidebar-item-color: #333333;
+    --sidebar-active-item-color: #0078d4;
+    --sidebar-level1-item-bg-color: #eeeeee;
+    --sidebar-level1-item-hover-bg-color: #e8e8e8;
+
+    --toc-filter-color: #333333;
+    --toc-filter-bg-color: #ffffff;
+    --toc-filter-filtericon-color: #616161;
+    --toc-filter-clearicon-color: #d32f2f;
+    --toc-filter-border-color: #d0d0d0;
+
+    /* Scrollbars */
+
+    --scrollbar-bg-color: transparent;
+    --scrollbar-thumb-bg-color: rgba(0,0,0,.2);
+    --scrollbar-thumb-border-color: transparent;
+
+    /* Alerts and Blocks */
+
+    --alert-info-border-color: rgba(25,118,210,.5);
+    --alert-info-bg-color: rgba(25,118,210,.08);
+
+    --alert-warning-border-color: rgba(245,124,0,.5);
+    --alert-warning-bg-color: rgba(245,124,0,.08);
+
+    --alert-danger-border-color: rgba(211,47,47,.5);
+    --alert-danger-bg-color: rgba(211,47,47,.08);
+
+    --alert-tip-border-color: rgba(0,0,0,.3);
+    --alert-tip-bg-color: rgba(0,0,0,.05);
+
+    --blockquote-border-color: rgba(0,0,0,.3);
+    --blockquote-bg-color: rgba(0,0,0,.05);
+
+    --breadcrumb-bg-color: #f0f0f0;
+
+    /* Tabs */
+
+    --nav-tabs-border-width: 1px;
+    --nav-tabs-border-color: #dee2e6;
+    --nav-tabs-border-radius: .375rem;
+    --nav-tabs-link-hover-border-color: #e9ecef #e9ecef transparent;
+    --nav-tabs-link-active-color: #333333;
+    --nav-tabs-link-active-bg: var(--main-bg-color);
+    --nav-tabs-link-active-border-color: var(--nav-tabs-border-color) var(--nav-tabs-border-color) var(--main-bg-color);
+
+    /* Inline Code */
+
+    --ref-bg-color: #f0f4f8;
+    --ref-color: #0277bd;
+
+    /* Code Blocks */
+
+    --code-bg-color: #f8f9fa;
 }
 
 /* Code Block Overrides */
