@@ -100,22 +100,6 @@ The `styles/main.js` file can be used to add your own custom Javascript. The rec
 
 Wrap your HTML or markdown in a `<div class="article"></div>` to activate styles that change heading styles and spacing to something more suitable for articles instead of API member docs. Supports up to 5 heading levels (`h1` to `h5` for HTML or `#` to `#####` for markdown).
 
-## More Screenshots
-
-### Desktop
-
-![Article Screenshot](./screenshots/article.png)
-
-![Namespace Page Screenshot](./screenshots/namespace.png)
-
-![Class Page Screenshot](./screenshots/class.png)
-
-### Mobile
-
-![Class Mobile Page Screenshot](./screenshots/class-mobile.png)
-
-![Nav Menu Mobile Screenshot](./screenshots/nav-mobile.png)
-
 ## Attribution
 
 Special thanks to [@jbltx](https://github.com/jbltx) for creating [DiscordFX](https://github.com/jbltx/DiscordFX) which was a great starting point for this template.
