@@ -13,52 +13,41 @@
 :root,
 [data-theme='dark'] {
     /* General */
-    
     --main-bg-color: #1f1f23;
     --footer-bg-color: rgba(0,0,0,.4);
     --separator-color: #42474f;
-
     --table-strip-bg-color: #151515;
     --table-header-bg-color: black;
     --table-header-color: hsla(0,0%,100%,.8);
     --table-header-border-color: #040405;
 
     /* Text */
-
     --appname-color: white;
-
     --h1-color: white;
     --h2-color: #f2f2f2;
     --h3-color: #e3e3e3;
     --h4-color: #ffffff;
     --h5-color: #e0e0e0;
-
     --text-color: #e1e1e1;
-    --link-color: #00b0f4;
-    --link-hover-color: #2ec4ff;
+    --link-color: #35bbee;
+    --link-hover-color: #5fd2ff;
     
     /* Mobile Topbar */
-
     --topbar-bg-color: #18191c;
     
     /* Button */
-
     --button-color: #747f8d;
 
     /* Sidebar */
-
     --sidebar-bg-color: #292B30;
-
     --search-color: #bdbdbd;
     --search-bg-color: #1b1e21;
     --search-searchicon-color: #e3e3e3;
     --search-border-color: black;
-
     --sidebar-item-color: white;
     --sidebar-active-item-color: #00b0f4;
     --sidebar-level1-item-bg-color: #222429;
     --sidebar-level1-item-hover-bg-color: #1D1F22;
-
     --toc-filter-color: #bdbdbd;
     --toc-filter-bg-color: #1b1e21;
     --toc-filter-filtericon-color: #e3e3e3;
@@ -66,42 +55,31 @@
     --toc-filter-border-color: black;
 
     /* Scrollbars */
-
     --scrollbar-bg-color: transparent;
     --scrollbar-thumb-bg-color: rgba(0,0,0,.4);
     --scrollbar-thumb-border-color: transparent;
 
     /* Alerts and Blocks */
-
     --alert-info-border-color: rgba(114,137,218,.5);
     --alert-info-bg-color: rgba(114,137,218,.1);
-
     --alert-note-title-color: #f2f4f7;
-
     --alert-warning-border-color: rgba(250,166,26,.5);
     --alert-warning-bg-color: rgba(250,166,26,.1);
     --alert-warning-title-color: #ffcf66;
-
     --alert-important-border-color: rgba(240,124,54,.5);
     --alert-important-bg-color: rgba(240,124,54,.1);
     --alert-important-title-color: #ffae73;
-
     --alert-danger-border-color: rgba(240,71,71,.5);
     --alert-danger-bg-color: rgba(240,71,71,.1);
-
     --alert-caution-title-color: #ff9b94;
-
     --alert-tip-border-color: rgba(255,255,255,.5);
     --alert-tip-bg-color: rgba(255,255,255,.1);
     --alert-tip-title-color: #9db6ff;
-
     --blockquote-border-color: rgba(255,255,255,.5);
     --blockquote-bg-color: rgba(255,255,255,.1);
-
     --breadcrumb-bg-color: #2f3136;
 
     /* Tabs */
-
     --nav-tabs-border-width: 1px;
     --nav-tabs-border-color: #495057;
     --nav-tabs-border-radius: .375rem;
@@ -111,64 +89,51 @@
     --nav-tabs-link-active-border-color: var(--nav-tabs-border-color) var(--nav-tabs-border-color) var(--main-bg-color);
 
     /* Inline Code */
-
-    --ref-bg-color: black;
-    --ref-color: #89d4f1;
+    --ref-bg-color: #00000036;
+    --ref-color: #ffffffde;
 
     /* Code Blocks */
-
     --code-bg-color: #151515;
 }
 
 /* Light Theme */
 [data-theme='light'] {
     /* General */
-    
     --main-bg-color: #ffffff;
     --footer-bg-color: rgba(0,0,0,.05);
     --separator-color: #e0e0e0;
-
     --table-strip-bg-color: #f5f5f5;
     --table-header-bg-color: #e8e8e8;
     --table-header-color: rgba(0,0,0,.8);
     --table-header-border-color: #d0d0d0;
 
     /* Text */
-
     --appname-color: #1a1a1a;
-
     --h1-color: #1a1a1a;
     --h2-color: #2a2a2a;
     --h3-color: #3a3a3a;
     --h4-color: #1a1a1a;
     --h5-color: #2a2a2a;
-
     --text-color: #333333;
     --link-color: #0078d4;
-    --link-hover-color: #106ebe;
+    --link-hover-color: #096ec4;
     
     /* Mobile Topbar */
-
     --topbar-bg-color: #f5f5f5;
     
     /* Button */
-
     --button-color: #616161;
 
     /* Sidebar */
-
     --sidebar-bg-color: #f8f8f8;
-
     --search-color: #333333;
     --search-bg-color: #ffffff;
     --search-searchicon-color: #616161;
     --search-border-color: #d0d0d0;
-
     --sidebar-item-color: #333333;
     --sidebar-active-item-color: #0078d4;
     --sidebar-level1-item-bg-color: #eeeeee;
     --sidebar-level1-item-hover-bg-color: #e8e8e8;
-
     --toc-filter-color: #333333;
     --toc-filter-bg-color: #ffffff;
     --toc-filter-filtericon-color: #616161;
@@ -176,42 +141,31 @@
     --toc-filter-border-color: #d0d0d0;
 
     /* Scrollbars */
-
     --scrollbar-bg-color: transparent;
     --scrollbar-thumb-bg-color: rgba(0,0,0,.2);
     --scrollbar-thumb-border-color: transparent;
 
     /* Alerts and Blocks */
-
     --alert-info-border-color: rgba(25,118,210,.5);
     --alert-info-bg-color: rgba(25,118,210,.08);
-
     --alert-note-title-color: #424242;
-
     --alert-warning-border-color: rgba(245,185,0,.5);
     --alert-warning-bg-color: rgba(245,185,0,.08);
     --alert-warning-title-color: #d0b300;
-
     --alert-important-border-color: rgba(219,113,37,.45);
     --alert-important-bg-color: rgba(219,113,37,.1);
     --alert-important-title-color: #b5780d;
-
     --alert-danger-border-color: rgba(211,47,47,.5);
     --alert-danger-bg-color: rgba(211,47,47,.08);
-
     --alert-caution-title-color: #b3261e;
-
     --alert-tip-border-color: rgba(0,0,0,.3);
     --alert-tip-bg-color: rgba(0,0,0,.05);
     --alert-tip-title-color: #1565c0;
-
     --blockquote-border-color: rgba(0,0,0,.3);
     --blockquote-bg-color: rgba(0,0,0,.05);
-
     --breadcrumb-bg-color: #f0f0f0;
 
     /* Tabs */
-
     --nav-tabs-border-width: 1px;
     --nav-tabs-border-color: #dee2e6;
     --nav-tabs-border-radius: .375rem;
@@ -221,12 +175,10 @@
     --nav-tabs-link-active-border-color: var(--nav-tabs-border-color) var(--nav-tabs-border-color) var(--main-bg-color);
 
     /* Inline Code */
-
-    --ref-bg-color: #f0f4f8;
-    --ref-color: #0277bd;
+    --ref-bg-color: #9d9d9d12;
+    --ref-color: #2d2d2d;
 
     /* Code Blocks */
-
     --code-bg-color: #f8f9fa;
 }
 

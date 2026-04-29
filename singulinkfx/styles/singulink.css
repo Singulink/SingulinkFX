@@ -1042,16 +1042,19 @@ article ol li,article ul li {
     font-style: normal
 }
 
-code,p .xref {
-    background-color: var(--ref-bg-color);
+code {
     color: var(--ref-color);
-    padding: 2px 3px;
-    font-size: .95em;
-    border-radius: 6px
 }
 
 code,p .xref,span.parametername {
     font-family: monospace
+}
+
+code,p .xref {
+    background-color: var(--ref-bg-color);
+    padding: 2px 3px;
+    font-size: .95em;
+    border-radius: 6px
 }
 
 .table {
