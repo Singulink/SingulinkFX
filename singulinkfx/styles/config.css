@@ -58,25 +58,36 @@
     --scrollbar-bg-color: transparent;
     --scrollbar-thumb-bg-color: rgba(0,0,0,.4);
     --scrollbar-thumb-border-color: transparent;
-
+ 
     /* Alerts and Blocks */
-    --alert-info-border-color: rgba(114,137,218,.5);
-    --alert-info-bg-color: rgba(114,137,218,.1);
-    --alert-note-title-color: #f2f4f7;
-    --alert-warning-border-color: rgba(250,166,26,.5);
-    --alert-warning-bg-color: rgba(250,166,26,.1);
-    --alert-warning-title-color: #ffcf66;
-    --alert-important-border-color: rgba(240,124,54,.5);
-    --alert-important-bg-color: rgba(240,124,54,.1);
-    --alert-important-title-color: #ffae73;
-    --alert-danger-border-color: rgba(240,71,71,.5);
-    --alert-danger-bg-color: rgba(240,71,71,.1);
-    --alert-caution-title-color: #ff9b94;
-    --alert-tip-border-color: rgba(255,255,255,.5);
-    --alert-tip-bg-color: rgba(255,255,255,.1);
-    --alert-tip-title-color: #9db6ff;
+    /* alert-info (used by NOTE) */
+    --alert-info-title-color: #7c9dff;
+    --alert-info-border-color: #7c9dffc7;
+    --alert-info-bg-color: #7c9dff21;
+    --alert-info-text-color: #c5cfe6;
+    /* TIP overrides (extends alert-info) */
+    --alert-info-TIP-title-color-override: #96d89e;
+    --alert-info-TIP-border-color-override: #96d89ec7;
+    --alert-info-TIP-bg-color-override: #96d89e21;
+    --alert-info-TIP-text-color-override: #c0dac3;
+    /* alert-danger (used by CAUTION) */
+    --alert-danger-title-color: #f0857d;
+    --alert-danger-border-color: #f0857dc7;
+    --alert-danger-bg-color: #f0857d21;
+    --alert-danger-text-color: #e2bab8;
+    /* IMPORTANT overrides (extends alert-danger) */
+    --alert-danger-IMPORTANT-title-color-override: #faa669;
+    --alert-danger-IMPORTANT-border-color-override: #faa669c7;
+    --alert-danger-IMPORTANT-bg-color-override: #faa66921;
+    --alert-danger-IMPORTANT-text-color-override: #e4bfa4;
+    /* alert-warning (used by WARNING) */
+    --alert-warning-title-color: #edbf5c;
+    --alert-warning-border-color: #edbf5cc7;
+    --alert-warning-bg-color: #edbf5c21;
+    --alert-warning-text-color: #dccaa5;
+
     --blockquote-border-color: rgba(255,255,255,.5);
-    --blockquote-bg-color: rgba(255,255,255,.1);
+    --blockquote-bg-color: rgba(255,255,255,.06);
     --breadcrumb-bg-color: #2f3136;
 
     /* Tabs */
@@ -90,7 +101,7 @@
 
     /* Inline Code */
     --ref-bg-color: #00000036;
-    --ref-color: #ffffffde;
+    --ref-color: #f5adac;
 
     /* Code Blocks */
     --code-bg-color: #151515;
@@ -146,23 +157,34 @@
     --scrollbar-thumb-border-color: transparent;
 
     /* Alerts and Blocks */
-    --alert-info-border-color: rgba(25,118,210,.5);
-    --alert-info-bg-color: rgba(25,118,210,.08);
-    --alert-note-title-color: #424242;
-    --alert-warning-border-color: rgba(245,185,0,.5);
-    --alert-warning-bg-color: rgba(245,185,0,.08);
-    --alert-warning-title-color: #d0b300;
-    --alert-important-border-color: rgba(219,113,37,.45);
-    --alert-important-bg-color: rgba(219,113,37,.1);
-    --alert-important-title-color: #b5780d;
-    --alert-danger-border-color: rgba(211,47,47,.5);
-    --alert-danger-bg-color: rgba(211,47,47,.08);
-    --alert-caution-title-color: #b3261e;
-    --alert-tip-border-color: rgba(0,0,0,.3);
-    --alert-tip-bg-color: rgba(0,0,0,.05);
-    --alert-tip-title-color: #1565c0;
+    /* alert-info (used by NOTE) */
+    --alert-info-title-color: #1565c0;
+    --alert-info-border-color: #1565c0c7;
+    --alert-info-bg-color: #1565c021;
+    --alert-info-text-color: #273d55;
+    /* TIP overrides (extends alert-info) */
+    --alert-info-TIP-title-color-override: #009a2e;
+    --alert-info-TIP-border-color-override: #009a2ec7;
+    --alert-info-TIP-bg-color-override: #009a2e21;
+    --alert-info-TIP-text-color-override: #206233;
+    /* alert-danger (used by CAUTION) */
+    --alert-danger-title-color: #d74e47;
+    --alert-danger-border-color: #d74e47c7;
+    --alert-danger-bg-color: #d74e4721;
+    --alert-danger-text-color: #5f2f2d;
+    /* IMPORTANT overrides (extends alert-danger) */
+    --alert-danger-IMPORTANT-title-color-override: #ca8000;
+    --alert-danger-IMPORTANT-border-color-override: #ca8000c7;
+    --alert-danger-IMPORTANT-bg-color-override: #ca800021;
+    --alert-danger-IMPORTANT-text-color-override: #705118;
+    /* alert-warning (used by WARNING) */
+    --alert-warning-title-color: #ccc500;
+    --alert-warning-border-color: #ccc500c7;
+    --alert-warning-bg-color: #ccc50021;
+    --alert-warning-text-color: #625f00;
+
     --blockquote-border-color: rgba(0,0,0,.3);
-    --blockquote-bg-color: rgba(0,0,0,.05);
+    --blockquote-bg-color: rgba(0,0,0,.03);
     --breadcrumb-bg-color: #f0f0f0;
 
     /* Tabs */
@@ -176,7 +198,7 @@
 
     /* Inline Code */
     --ref-bg-color: #9d9d9d12;
-    --ref-color: #2d2d2d;
+    --ref-color: #c71000;
 
     /* Code Blocks */
     --code-bg-color: #f8f9fa;

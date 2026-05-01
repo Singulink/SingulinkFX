@@ -77,34 +77,77 @@ ol>li,ul>li {
     display: list-item
 }
 
-h1 {
-    color: var(--link-active-color)
-}
 
 h1,h2,h3,h4,h5 {
-    position: relative
+    position: relative;
+    line-height: initial;
+}
+
+h1 {
+    font-size: 2.25em;
+    color: var(--h1-color);
+    margin-block-start: 1em;
 }
 
 h1,h2 {
     margin-block-start: 2em
 }
 
+h2 {
+    font-size: 1.9em;
+    color: var(--h2-color)
+}
+
+.article h2 {
+    margin-block-start: 1.3em;
+    padding-bottom: 6px;
+    border-bottom: 1px solid var(--separator-color)
+}
+
 h3 {
-    color: var(--h3-color)
+    color: var(--h3-color);
+    font-size: 1.7em;
+    font-weight: 500;
+    margin-block-start: 1.7em
+}
+
+.article h3 {
+    margin-block-start: 1.2em;
+    margin-block-end: .9em
 }
 
 h4 {
-    opacity: 1;
     color: var(--h4-color);
     border-bottom: 2px solid var(--separator-color);
-    margin: 20px 0 0
+    margin: 0;
+
+    font-size: 1.7em;
+    font-weight: 400;
+    margin-block-start: 1.5em;
+    padding-bottom: 10px
+}
+
+.article h4 {
+    font-size: 1.5em;
+    font-weight: 300;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    padding-bottom: 0;
+    border-bottom: none
 }
 
 h5 {
     margin-block-end: .8em;
     margin-block-start: 1em;
     font-weight: 500;
-    color: var(--h5-color)
+    color: var(--h5-color);
+    font-size: 1.1em
+}
+
+.article h5 {
+    font-size: 1.13em;
+    margin-block-start: 1.5em;
+    margin-block-end: 1em
 }
 
 h6 {
@@ -361,6 +404,21 @@ table td {
     margin: 0;
 }
 
+blockquote {
+    margin: 8px 0;
+    border-left: 4px solid var(--blockquote-border-color);
+    background: var(--blockquote-bg-color)
+}
+
+blockquote>p {
+    font-style: italic
+}
+
+.alert>p,blockquote>p {
+    margin: 0;
+    font-size: 16px
+}
+
 .alert,blockquote {
     border-radius: 4px;
     padding: 12px;
@@ -399,89 +457,80 @@ table td {
     -moz-osx-font-smoothing: grayscale
 }
 
-.alert>p,blockquote>p {
-    margin: 0;
-    font-size: 16px
+.alert code {
+    color: var(--text-color);
 }
 
 .alert.alert-info {
     border: 2px solid var(--alert-info-border-color);
-    background: var(--alert-info-bg-color)
+    background: var(--alert-info-bg-color);
+    color: var(--alert-info-text-color)
 }
 
 .alert.alert-warning {
     border: 2px solid var(--alert-warning-border-color);
-    background: var(--alert-warning-bg-color)
+    background: var(--alert-warning-bg-color);
+    color: var(--alert-warning-text-color)
 }
 
 .alert.alert-danger {
     border: 2px solid var(--alert-danger-border-color);
-    background: var(--alert-danger-bg-color)
+    background: var(--alert-danger-bg-color);
+    color: var(--alert-danger-text-color)
 }
 
-.NOTE.alert.alert-info {
-    border: 2px solid var(--alert-tip-border-color);
-    background: var(--alert-tip-bg-color)
+.alert.alert-info>h5 {
+    color: var(--alert-info-title-color)
 }
 
-.TIP.alert.alert-info {
-    border: 2px solid var(--alert-info-border-color);
-    background: var(--alert-info-bg-color)
-}
-
-.IMPORTANT.alert {
-    border: 2px solid var(--alert-important-border-color);
-    background: var(--alert-important-bg-color)
-}
-
-.NOTE.alert>h5 {
-    color: var(--alert-note-title-color)
-}
-
-.NOTE.alert>h5::before {
+.alert.alert-info>h5::before {
     content: "\f431"
 }
 
-.TIP.alert>h5 {
-    color: var(--alert-tip-title-color)
-}
-
-.TIP.alert>h5::before {
-    content: "\f46b"
-}
-
-.IMPORTANT.alert>h5 {
-    color: var(--alert-important-title-color)
-}
-
-.IMPORTANT.alert>h5::before {
-    content: "\f530"
-}
-
-.CAUTION.alert>h5 {
-    color: var(--alert-caution-title-color)
-}
-
-.CAUTION.alert>h5::before {
-    content: "\f623"
-}
-
-.WARNING.alert>h5 {
+.alert.alert-warning>h5 {
     color: var(--alert-warning-title-color)
 }
 
-.WARNING.alert>h5::before {
+.alert.alert-warning>h5::before {
     content: "\f33b"
 }
 
-blockquote {
-    margin: 8px 0;
-    border-left: 4px solid var(--blockquote-border-color);
-    background: var(--blockquote-bg-color)
+.alert.alert-danger>h5 {
+    color: var(--alert-danger-title-color)
 }
 
-blockquote>p {
-    font-style: italic
+.alert.alert-danger>h5::before {
+    content: "\f623"
+}
+
+/* TIP and IMPORTANT overrides (inherit alert-info and alert-danger by default, respectively) */
+
+.TIP.alert.alert-info {
+    border-color: var(--alert-info-TIP-border-color-override);
+    background: var(--alert-info-TIP-bg-color-override);
+    color: var(--alert-info-TIP-text-color-override)
+}
+
+.TIP.alert.alert-info>h5 {
+    color: var(--alert-info-TIP-title-color-override)
+}
+
+.TIP.alert.alert-info>h5::before {
+    content: "\f46b"
+}
+
+.IMPORTANT.alert.alert-danger {
+    border-color: var(--alert-danger-IMPORTANT-border-color-override);
+    background: var(--alert-danger-IMPORTANT-bg-color-override);
+    color: var(--alert-danger-IMPORTANT-text-color-override)
+}
+
+.IMPORTANT.alert.alert-danger>h5 {
+    color: var(--alert-danger-IMPORTANT-title-color-override)
+}
+
+.IMPORTANT.alert.alert-danger>h5::before {
+    content: "\f530"
 }
 
 #breadcrumb {
@@ -607,73 +656,6 @@ body {
     body {
         font-size: var(--smalldevice-base-font-size)
     }
-}
-
-h1,h2,h3,h4,h5 {
-    line-height: initial
-}
-
-h1,h1:first-child {
-    font-size: 2.25em;
-    letter-spacing: .5px;
-    color: var(--h1-color);
-    margin-block-start: 1em;
-    margin-block-end: -.05em
-}
-
-.article h1 {
-    margin-block-end: -.2em
-}
-
-h2 {
-    font-size: 2.1em;
-    color: var(--h2-color)
-}
-
-.article h2 {
-    margin-block-start: 1.3em;
-    padding-bottom: 6px;
-    border-bottom: 1px solid var(--separator-color)
-}
-
-.article h3,h3 {
-    font-size: 1.95em;
-    font-weight: 500;
-    margin-block-start: 1.7em
-}
-
-.article h3 {
-    font-size: 1.85em;
-    margin-block-start: 1.2em;
-    margin-block-end: .9em
-}
-
-h4 {
-    font-size: 1.8em;
-    font-weight: 400;
-    margin-block-start: 2em;
-    padding-bottom: 10px
-}
-
-.article h4 {
-    font-size: 1.5em;
-    font-weight: 300;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    padding-bottom: 0;
-    border-bottom: none
-}
-
-h5 {
-    font-size: 1.1em
-}
-
-.article h5 {
-    font-size: 1.13em;
-    font-weight: 400;
-    text-decoration: underline;
-    margin-block-start: 1.5em;
-    margin-block-end: 1em
 }
 
 a.brand:hover {
