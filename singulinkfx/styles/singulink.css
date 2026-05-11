@@ -1028,6 +1028,10 @@ code {
     color: var(--ref-color);
 }
 
+a code {
+    color: var(--link-color);
+}
+
 code,p .xref,.article .xref,span.parametername {
     font-family: monospace
 }
