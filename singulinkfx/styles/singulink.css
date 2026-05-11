@@ -1028,11 +1028,11 @@ code {
     color: var(--ref-color);
 }
 
-code,p .xref,span.parametername {
+code,p .xref,.article .xref,span.parametername {
     font-family: monospace
 }
 
-code,p .xref {
+code,p .xref,.article .xref {
     background-color: var(--ref-bg-color);
     padding: 2px 3px;
     font-size: .95em;
