@@ -836,12 +836,20 @@ nav a.active,nav a.active:focus,nav a.active:hover {
     display: inline-block;
 }
 
-.theme-toggle-btn.light-mode .theme-icon-light {
+[data-theme='light'] .theme-toggle-btn .theme-icon-light {
     display: inline-block;
 }
 
-.theme-toggle-btn.light-mode .theme-icon-dark {
+[data-theme='light'] .theme-toggle-btn .theme-icon-dark {
     display: none;
+}
+
+.theme-toggle-label::after {
+    content: "Dark Mode";
+}
+
+[data-theme='light'] .theme-toggle-label::after {
+    content: "Light Mode";
 }
 
 .theme-toggle-label {

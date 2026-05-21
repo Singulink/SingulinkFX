@@ -1,5 +1,3 @@
-{{!Copyright (c) Microsoft. All rights reserved. Licensed under the MIT license. See LICENSE file in the project root for full license information.}}
-
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -10,8 +8,32 @@
   {{#_description}}<meta name="description" content="{{_description}}">{{/_description}}
   <link rel="shortcut icon" href="{{_rel}}{{{_appFaviconPath}}}{{^_appFaviconPath}}favicon.ico{{/_appFaviconPath}}">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/night-owl.min.css" id="highlight-theme-dark">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/atom-one-light.min.css" id="highlight-theme-light" disabled>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/night-owl.min.css" id="highlight-theme-dark">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/atom-one-light.min.css" id="highlight-theme-light" disabled>
+  <script>
+    // Theme primitives. Defined inline so the theme can be applied synchronously
+    // before the body renders (avoids FOUC). Reused by singulink.js for toggling
+    // and for reacting to OS theme changes.
+    window.SingulinkTheme = (function () {
+      function resolve(saved) {
+        if (saved === 'light' || saved === 'dark') return saved;
+        return (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) ? 'light' : 'dark';
+      }
+      function apply(theme) {
+        document.documentElement.setAttribute('data-theme', theme);
+        var dark = document.getElementById('highlight-theme-dark');
+        var light = document.getElementById('highlight-theme-light');
+        if (dark)  dark.disabled  = theme !== 'dark';
+        if (light) light.disabled = theme !== 'light';
+      }
+      return { resolve: resolve, apply: apply };
+    })();
+    try {
+      SingulinkTheme.apply(SingulinkTheme.resolve(localStorage.getItem('theme')));
+    } catch (e) {
+      SingulinkTheme.apply('dark');
+    }
+  </script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" integrity="sha384-EvBWSlnoFgZlXJvpzS+MAUEjvN7+gcCwH+qh7GRFOGgZO0PuwOFro7qPOJnLfe7l" crossorigin="anonymous">
   <link rel="stylesheet" href="{{_rel}}styles/config.css">
   <link rel="stylesheet" href="{{_rel}}styles/singulink.css">

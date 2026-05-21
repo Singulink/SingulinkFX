@@ -1,59 +1,24 @@
-// Copyright (c) Microsoft. All rights reserved. Licensed under the MIT license. See LICENSE file in the project root for full license information.
-
-// Theme toggle functionality
-function initTheme() {
-    const savedTheme = localStorage.getItem('theme') || 'dark';
-    document.documentElement.setAttribute('data-theme', savedTheme);
-    updateThemeIcon(savedTheme);
-    updateHighlightTheme(savedTheme);
-}
+// Theme toggle functionality.
+//
+// The initial data-theme attribute and highlight.js stylesheet state are set synchronously by an inline script in <head> (see head.tmpl.partial), which also
+// exposes window.SingulinkTheme with resolve()/apply() helpers used here. The toggle button's icon/label are driven purely by CSS from [data-theme].
 
 function toggleTheme() {
-    const currentTheme = document.documentElement.getAttribute('data-theme') || 'dark';
-    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-    
-    document.documentElement.setAttribute('data-theme', newTheme);
-    localStorage.setItem('theme', newTheme);
-    updateThemeIcon(newTheme);
-    updateHighlightTheme(newTheme);
+    const current = document.documentElement.getAttribute('data-theme') || 'dark';
+    const next = current === 'dark' ? 'light' : 'dark';
+    localStorage.setItem('theme', next);
+    SingulinkTheme.apply(next);
 }
 
-function updateThemeIcon(theme) {
-    const button = document.getElementById('theme-toggle');
-    if (button) {
-        if (theme === 'dark') {
-            button.classList.remove('light-mode');
-        } else {
-            button.classList.add('light-mode');
-        }
-
-        const label = button.querySelector('.theme-toggle-label');
-        if (label) {
-            label.textContent = theme === 'dark' ? 'Dark Mode' : 'Light Mode';
-        }
-    }
-}
-
-function updateHighlightTheme(theme) {
-    const darkTheme = document.getElementById('highlight-theme-dark');
-    const lightTheme = document.getElementById('highlight-theme-light');
-    
-    if (darkTheme && lightTheme) {
-        if (theme === 'dark') {
-            darkTheme.disabled = false;
-            lightTheme.disabled = true;
-        } else {
-            darkTheme.disabled = true;
-            lightTheme.disabled = false;
-        }
-    }
-}
-
-// Initialize theme on page load
-if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', initTheme);
-} else {
-    initTheme();
+// Follow the OS/browser preference until the user explicitly picks a theme.
+if (window.matchMedia) {
+    const mql = window.matchMedia('(prefers-color-scheme: dark)');
+    const onChange = () => {
+        if (localStorage.getItem('theme')) return;
+        SingulinkTheme.apply(SingulinkTheme.resolve(null));
+    };
+    if (mql.addEventListener) mql.addEventListener('change', onChange);
+    else if (mql.addListener) mql.addListener(onChange);
 }
 
 function toggleMenu() {
@@ -135,9 +100,9 @@ $(function() {
             activeTocItem.scrollIntoView({ block: "center" });
         }
         else{
-            setTimeout(scrollToc, 500);
+            setTimeout(scrollToc, 200);
         }
     }
 
-    setTimeout(scrollToc, 500);
+    setTimeout(scrollToc, 200);
 });
