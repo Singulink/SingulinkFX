@@ -73,6 +73,22 @@ img {
     max-width: 100%
 }
 
+/* Embedded video (DocFX [!Video] and :::video syntax) */
+
+div.embeddedvideo {
+    padding-top: 56.25%;
+    position: relative;
+    width: 100%;
+    margin-bottom: 1em
+}
+
+div.embeddedvideo iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%
+}
+
 ol>li,ul>li {
     display: list-item
 }
